@@ -110,11 +110,19 @@ The skill lives in `SKILL.md`. You can edit it to:
 - Modify the output structure
 - Change the kill test criteria
 
+After editing, re-package with:
+
+```bash
+python -m scripts.package_skill path/to/product-insight/
+```
+
+---
+
 ## Who This Is For
 
 PMs applying to roles where the application is a performance, not a form — where showing how you think matters more than listing where you've worked.
 
-Especially useful if you're switching domains (e.g., EdTech → fintech) and need to prove you can generate novel insight without prior industry experience. The skill is designed to surface transferable mental models and first-party evidence that domain outsiders uniquely have.
+Works whether you're switching domains, leveling up, or going after a company you're obsessed with. The skill surfaces transferable mental models and first-party evidence that generic applicants can't replicate.
 
 ## License
 
