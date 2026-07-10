@@ -1,0 +1,7 @@
+# Personal profiles — the skill reads these locally; only the templates ship
+PROFILE.md
+PROFILE.local.md
+
+# OS / editor cruft
+.DS_Store
+*.swp

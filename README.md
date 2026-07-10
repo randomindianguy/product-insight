@@ -1,129 +1,55 @@
 # product-insight
 
-A Claude skill that generates differentiated, evidence-backed product insights for PM job applications.
-
-You paste a JD. The skill systematically generates hypotheses, kills the generic ones, finds structural evidence, and outputs a Minto-pyramid artifact — the kind a hiring PM reads in 30 seconds and thinks "this person actually used the product."
-
----
-
-## The Problem
-
-Most PM application artifacts fall into one of two traps:
-
-1. **Restating strategy** — "You should invest in AI features." They know. It's on their roadmap.
-2. **Framework cosplay** — RICE scores and TAM estimates that any applicant with a blog subscription could produce.
-
-Neither signals how you think. Neither requires having used the product. Neither is differentiated.
-
-## What This Skill Does
-
-It runs a structured process to find the gap between what a company *says* and what their product *does* — then builds an artifact around that gap with verifiable evidence.
-
-The process:
-
-1. **Altitude check** — Frame the insight as business impact before going deep. Most artifacts fail at altitude, not depth.
-2. **Hypothesize and kill** — Generate a thesis from your own product usage, then try to destroy it. Search their changelog, pricing page, blog, investor materials. If the company already uses your words, it's dead. Move on.
-3. **Re-derive from JD tensions** — Read the JD line by line for mission-product gaps, positioning contradictions, and growth-investment mismatches. JDs leak strategy.
-4. **Narrow with structural evidence** — API docs, support pages, app store reviews, Reddit threads. If you can't link to it, it doesn't count.
-5. **Reframe architecturally** — Name the system-level constraint, not a feature. Frame as opportunity, not criticism.
-6. **Stress test** — Score for non-obvious, differentiated, opinionated (/10 each). Check if you can explain why they haven't done it without calling them stupid.
-7. **Build the artifact** — Minto pyramid: recommendation → evidence → what you'd do → why you.
-
-Dead hypotheses are progress, not failure. The skill logs them and keeps going.
-
-## Philosophy
-
-Based on [hire for slope, not y-intercept](https://mattrickard.com/hire-slope-not-intercept). The artifact should demonstrate how you think — learning velocity, systems thinking, pattern recognition across domains — not years of domain experience.
-
----
-
-## Install
-
-1. Download `product-insight.skill` from [Releases](../../releases)
-2. Open a Claude Project
-3. Drop the `.skill` file into the project files
-
-That's it. The skill triggers automatically when you start working on a PM application artifact.
-
-## Usage
-
-Start a conversation in the project with something like:
+Skills for getting hired as a PM by building something instead of describing something.
 
 ```
-Applying to Ramp for Growth PM.
-JD: [paste]
-Product: Corporate card and spend management platform.
-My usage: [describe how you use it + screenshots]
-External sources: App store reviews, G2 reviews, their Year in Review blog post.
+npx skills@latest add randomindianguy/product-insight
 ```
 
-The skill walks you through each phase, uses interactive checkpoints to get your input at decision points, and outputs the final Minto-pyramid artifact.
+## Why
 
-### Trigger Phrases
+A hiring manager is pricing the risk of your future decisions. Their only evidence is your past ones.
 
-The skill also fires on:
-- "product insight for [company]"
-- "application artifact"
-- "cold outreach insight"
-- "PM portfolio piece"
-- "hire me artifact"
-- Sharing a JD and asking for a differentiated angle
+An interview samples those decisions under a clock, through words, and the sample can be rehearsed. A **receipt** — something you built, that ran, that a skeptic can reproduce — samples them at leisure and cannot be faked.
 
-## Output
+These skills are the same test as the interview, run with a better instrument.
 
-A Minto-pyramid structured artifact:
+## The flow
 
-```
-# [One-line business impact thesis]
+Three sessions, in order, each in a fresh context window.
 
-## The Insight
-Structural finding + why now + why at this company's current scale
+| | |
+|---|---|
+| **`/thesis`** | Find a claim about the company that survives being killed. Extract their bar, kill your first two hypotheses, name a segment, gather receipts, name the constraint holding the problem in place, audit the models you carried from your last domain, score Delta-4, name the bet. |
+| **`/artifact`** | Build the receipt that tests the claim. Ends when it ran, positive or negative. |
+| **`/ship-review`** | Make the interaction an exhibit, write it up, name ten people, send it to one human. |
 
-## Supporting Evidence
-Verifiable signals from docs, reviews, forums, usage
+`/claims` sits underneath. It tests whether a sentence about your own work is visible, checkable, and attached to you. `/ship-review` reaches for it, and you can run it alone on a resume bullet or a cold email.
 
-## What I'd Do
-Validation plan, go/no-go criteria, fallback if wrong
+`/thesis`, `/artifact`, `/claims`, and `/ship-review` are model-invoked, so the agent can reach them on its own and each works standalone. `/product-insight` is user-invoked and orchestrates the flow.
 
-## Why Me
-Specific background → this problem (slope, not intercept)
+## The one rule the structure enforces
 
-## Appendix
-Screenshots, links, raw data — everything to verify claims
-```
+The write-up lives in `/ship-review`, unreachable until `/artifact` has produced a result.
 
-## Example Dead Hypotheses (This Is Normal)
+This is deliberate. When the template is visible from the first session, the agent races toward it and hands you a memo. A memo about a company is a plan, and a plan cannot be wrong at the moment you send it, which is why it carries no information. Keeping the write-up out of view is what makes the build happen.
 
-The skill will kill most of your initial ideas. That's the point. A typical run might look like:
+## Reference files
 
-- ❌ "Ramp should add budget forecasting" — they shipped it 3 months ago. Dead.
-- ❌ "Ramp needs better receipt scanning" — it's in their marketing copy. Dead.
-- ❌ "Ramp should integrate with more ERPs" — 14 integrations listed on their site. Dead.
-- ✅ "Ramp's activation model assumes a top-down buyer, but their fastest-growing segment is bottom-up..." — not in their blog, not on their pricing page, supported by app store reviews and support forum patterns. Alive.
+- `skills/artifact/EVALS.md` — architecture, agentic levels, golden datasets, rubric design, scope containment. Loaded only when the artifact is an AI system.
+- `skills/ship-review/READER.md` — reader segmentation, the aha, the bet, voice, and the two poisons. Loaded only when the artifact has a surface someone moves through.
 
-## Customization
+## Vocabulary
 
-The skill lives in `SKILL.md`. You can edit it to:
+- **receipt** — evidence the reader can check: a URL, a screenshot, a quote, a number they can recompute.
+- **it ran** — binary state. The build produced a result, including a negative one.
+- **detachable** — a claim true *of the artifact*, so anyone holding it could say it. The hiring manager can champion the work and cannot champion you.
+- **wall** — the specific obstacle you hit that stopped everyone else. A principle is borrowable; a wall is not, because you had to have been in the room. The load-bearing specific that attaches a claim to you.
+- **exhibit** — the interaction is drawn from the eval rather than captioned about it.
+- **Delta-4** — the artifact must beat a resume plus a referral by four points out of ten. Below that, don't build.
+- **transferred model** — a mental model carried from a previous domain. Audit the condition underneath it before you trust it here.
+- **the swerve** — a bigger framework arriving one inch before shipping, wearing rigour. The tell is the timing.
+- **the compass** — a second signal run on a finished thesis. North (whose job the theme serves), South (is the outcome producible), East (does the strongest counter survive), West (does the analogy's condition transfer). Each failed direction routes to the step that owns it.
+- **the transfer test** — name the source, name the condition that made it true there, check the condition holds here; if it fails, the model may be inverted, not merely weaker. Run inward on the user's own imported models, outward on other companies' solutions.
 
-- Adjust stress test thresholds (default: flag anything below 5/10)
-- Add company-specific research sources
-- Modify the output structure
-- Change the kill test criteria
-
-After editing, re-package with:
-
-```bash
-python -m scripts.package_skill path/to/product-insight/
-```
-
----
-
-## Who This Is For
-
-PMs applying to roles where the application is a performance, not a form — where showing how you think matters more than listing where you've worked.
-
-Works whether you're switching domains, leveling up, or going after a company you're obsessed with. The skill surfaces transferable mental models and first-party evidence that generic applicants can't replicate.
-
-## License
-
-MIT
+MIT.
