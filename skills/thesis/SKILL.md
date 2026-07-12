@@ -58,7 +58,15 @@ Cut on the dimension that causes the behaviour: the job they are trying to get d
 
 Cross two dimensions. Score each cell on how badly it hurts, and on whether the company's strategy says they care. Take one cell and hold it through every step below.
 
-**Done when:** one cell, one causal dimension, and one sentence on why this company wants that cell served.
+State the job, explicitly, in one line. The skill derives a job — the fear and the verb underneath the segment — but if it dissolves that into the segment sentence, the reader never sees the one thing a PM most needs named. So write it, in this fixed format, every run:
+
+> The job: [Who] is trying to [get what done], in [what situation], but [what blocks or scares them].
+
+Example (Clay): A RevOps person is trying to send personalised outbound at scale, in a fast-moving enterprise motion, but is afraid of being the one blamed when AI-generated garbage reaches a real prospect. That is a job — a who, a verb, a context, a fear. "Enterprise RevOps lead" is not a job; it is a label. If what you wrote is a category (a noun, a type of person), you have written a demographic, not a job — go back and find the fear-plus-verb underneath it.
+
+Then run the altitude check (one line, from the milkshake rule). Name what else could get hired for this job. If everything on that list is a product in the same category as the one you are analysing, you have described the product back to yourself, not the job — climb one rung and restate the job more abstractly. The job is at the right altitude when genuinely different kinds of solution show up as rivals. (Clay's job "protect me from sending garbage" can also be hired by a manual QA pass, an agency, a junior who spot-checks — different categories, so the altitude is right.)
+
+**Done when:** one cell, one causal dimension, the job stated in the fixed format, the altitude check passed, and one sentence on why this company wants that cell served.
 
 If there is no JD: the segment is the step that suffers most, because a JD is what normally anchors who the pain is for. With no JD you are inferring the segment from market structure, and inference caps at Reasoned — it will rarely reach Verified without a real user-pain quote. Flag this honestly at the keystone step, and if the segment is load-bearing, a lightweight search for user-pain evidence (forums, reviews, community threads) is what lifts it from guess to confirmed.
 
@@ -193,13 +201,14 @@ Then check the second kind specifically: look back at the compass and Step 3. Di
 
 Everything above uses the skill's internal vocabulary: keystone, wall, compass, Delta-4, Reasoned, producibility flag. That language is for doing the work. It is not how you talk to the user about the result.
 
-So end every run with a short plain-English summary, under a heading the user can't miss. No jargon. If a skill term is unavoidable, define it in the same sentence. Write it the way you'd explain it to a smart friend who has never heard these words. Five sentences or fewer:
+So end every run with a short plain-English summary, under a heading the user can't miss. No jargon. If a skill term is unavoidable, define it in the same sentence. Write it the way you'd explain it to a smart friend who has never heard these words. Keep it short — six lines, one per point:
 
 1. The claim — what you think is true about this company, in one plain sentence.
-2. Why it's not obvious — what most people would say instead, and why this is different.
-3. How solid it is — is the core checked-and-true, or still a guess? Say which. ("The main fact is confirmed. The part about who it hurts is still a guess.")
-4. The one risk — the single thing that, if wrong, sinks it, in plain words.
-5. What to build — the receipt, described so a non-expert gets it.
+2. The job — restate the Step 3 job line in plain words: who is trying to do what, and what scares them.
+3. Why it's not obvious — what most people would say instead, and why this is different.
+4. How solid it is — is the core checked-and-true, or still a guess? Say which. ("The main fact is confirmed. The part about who it hurts is still a guess.")
+5. The one risk — the single thing that, if wrong, sinks it, in plain words.
+6. What to build — the receipt, described so a non-expert gets it.
 
 Then one line: what a normal person should take away from all this.
 
