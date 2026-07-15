@@ -44,11 +44,8 @@ This is deliberate. When the template is visible from the first session, the age
 ## Vocabulary
 
 - **receipt** — evidence the reader can check: a URL, a screenshot, a quote, a number they can recompute.
-- **it ran** — binary state. The build produced a result, including a negative one.
-- **detachable** — a claim true *of the artifact*, so anyone holding it could say it. The hiring manager can champion the work and cannot champion you.
 - **wall** — the specific obstacle you hit that stopped everyone else. A principle is borrowable; a wall is not, because you had to have been in the room. The load-bearing specific that attaches a claim to you.
-- **transferred model** — a mental model carried from a previous domain. Audit the condition underneath it before you trust it here.
-- **the two checks** — run on a finished thesis before it ships: the counter (does the strongest objection survive?) and producibility (can you build the evidence honestly from outside?). Either can route the thesis back to the step that owns the failure.
-- **the transfer test** — name the source, name the condition that made it true there, check the condition holds here; if it fails, the model may be inverted, not merely weaker. Run on the models the user carries from a previous domain.
+- **keystone** — the one claim the whole thesis rests on. Pull it out and the thesis is gone, not just weaker. Name it, and say how sure of it you actually are.
+- **detachable** — a claim true *of the artifact*, so anyone holding it could say it. The hiring manager can champion the work and cannot champion you.
 
 MIT.
