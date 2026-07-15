@@ -28,6 +28,8 @@ Three sessions, in order, each in a fresh context window.
 
 `/thesis`, `/artifact`, `/claims`, and `/ship-review` are model-invoked, so the agent can reach them on its own and each works standalone. `/product-insight` is user-invoked and orchestrates the flow.
 
+> **Note:** `/thesis`'s research phase is token-heavy; on smaller plans, expect to hit limits mid-run. Consider running `/thesis` in a fresh session, or narrowing the research scope.
+
 ## The one rule the structure enforces
 
 The write-up lives in `/ship-review`, unreachable until `/artifact` has produced a result.
