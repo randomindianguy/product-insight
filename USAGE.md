@@ -83,7 +83,7 @@ It reads the thesis output from the folder, proposes one thing to build with an 
 /ship-review
 ```
 
-Now the write-up appears. It will run `/claims` over every sentence, make the interaction an exhibit, produce the four-section write-up, make you name ten people, and end by handing you the two questions to send one human.
+Now the write-up appears. It will run `/claims` over every sentence, make the interaction impossible to fake, produce the four-section write-up, make you name ten people, and end by handing you the two questions to send one human.
 
 ### Using `/claims` on its own
 

@@ -22,7 +22,7 @@ Three sessions, in order, each in a fresh context window.
 |---|---|
 | **`/thesis`** | Find a claim about the company that survives being killed. Extract their bar, kill your first two hypotheses, name a segment, gather receipts, name the constraint holding the problem in place, audit the models you carried from your last domain, score Delta-4, name the bet. |
 | **`/artifact`** | Build the receipt that tests the claim. Ends when it ran, positive or negative. |
-| **`/ship-review`** | Make the interaction an exhibit, write it up, name ten people, send it to one human. |
+| **`/ship-review`** | Make the interaction impossible to fake, write it up, name ten people, send it to one human. |
 
 `/claims` sits underneath. It tests whether a sentence about your own work is visible, checkable, and attached to you. `/ship-review` reaches for it, and you can run it alone on a resume bullet or a cold email.
 
@@ -47,10 +47,8 @@ This is deliberate. When the template is visible from the first session, the age
 - **it ran** — binary state. The build produced a result, including a negative one.
 - **detachable** — a claim true *of the artifact*, so anyone holding it could say it. The hiring manager can champion the work and cannot champion you.
 - **wall** — the specific obstacle you hit that stopped everyone else. A principle is borrowable; a wall is not, because you had to have been in the room. The load-bearing specific that attaches a claim to you.
-- **exhibit** — the interaction is drawn from the eval rather than captioned about it.
 - **Delta-4** — the artifact must beat a resume plus a referral by four points out of ten. Below that, don't build.
 - **transferred model** — a mental model carried from a previous domain. Audit the condition underneath it before you trust it here.
-- **the swerve** — a bigger framework arriving one inch before shipping, wearing rigour. The tell is the timing.
 - **the compass** — a second signal run on a finished thesis. North (whose job the theme serves), South (is the outcome producible), East (does the strongest counter survive), West (does the analogy's condition transfer). Each failed direction routes to the step that owns it.
 - **the transfer test** — name the source, name the condition that made it true there, check the condition holds here; if it fails, the model may be inverted, not merely weaker. Run inward on the user's own imported models, outward on other companies' solutions.
 

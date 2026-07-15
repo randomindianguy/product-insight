@@ -27,11 +27,11 @@ Run the `claims` skill over the write-up. Every load-bearing sentence gets visib
 
 **Done when:** `claims` passes.
 
-## Step 3 — Make the interaction an exhibit
+## Step 3 — Make the interaction impossible to fake
 
 Could someone fake this interaction with no eval, no dataset, no mutations? Then it proves nothing about the user's engineering.
 
-A caption asserting rigour is an assertion, and the artifact refuses assertions. Instead, let the reader **lose the exact discrimination the eval was built to pass**, then show the system passing it at scale. Their failure becomes the reason the mutations exist, and the interaction becomes an **exhibit** from the eval rather than a claim about it.
+A caption asserting rigour is an assertion, and the artifact refuses assertions. Instead, let the reader **lose the exact discrimination the eval was built to pass**, then show the system passing it at scale. Their failure becomes the reason the mutations exist, and the interaction is drawn from the eval rather than a claim about it.
 
 Designing that interaction → [READER.md](READER.md).
 
@@ -95,15 +95,3 @@ The first recovers whether the judgment was real or trivial. The second is the w
 A misread is the finding. Record it. The real reader will not be sitting next to the user.
 
 **Done when:** one human's unprompted reaction is written down.
-
-## The swerve
-
-Analysis paralysis and confidence in a bad decision are the same muscle failing, and the first disguises itself as the cure for the second.
-
-The moment a decision closes, a bigger and more interesting framework arrives offering to reorganise everything. It sounds like rigour. It arrives one inch before shipping and never one inch after.
-
-**The tell is the timing.** Nothing about the architecture question changed in the twenty minutes after the artifact was finished. What changed is that there was nothing left to do but wait.
-
-When the user raises a new consideration after Step 1 has cleared, check what actually changed. Usually it resolves to *you already handled this.*
-
-Name it. Park it. Send the thing. Wait for a human.
