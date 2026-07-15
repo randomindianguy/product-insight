@@ -20,7 +20,7 @@ Three sessions, in order, each in a fresh context window.
 
 | | |
 |---|---|
-| **`/thesis`** | Find a claim about the company that survives being killed. Extract their bar, kill your first two hypotheses, name a segment, gather receipts, name the constraint holding the problem in place, audit the models you carried from your last domain, score Delta-4, name the bet. |
+| **`/thesis`** | Find a claim about the company that survives being killed. Extract their bar, kill your first two hypotheses, name a segment, gather receipts, name the constraint holding the problem in place, audit the models you carried from your last domain, name the bet, then stress-test it and name the one claim it dies without. |
 | **`/artifact`** | Build the receipt that tests the claim. Ends when it ran, positive or negative. |
 | **`/ship-review`** | Make the interaction impossible to fake, write it up, name ten people, send it to one human. |
 
@@ -47,9 +47,8 @@ This is deliberate. When the template is visible from the first session, the age
 - **it ran** — binary state. The build produced a result, including a negative one.
 - **detachable** — a claim true *of the artifact*, so anyone holding it could say it. The hiring manager can champion the work and cannot champion you.
 - **wall** — the specific obstacle you hit that stopped everyone else. A principle is borrowable; a wall is not, because you had to have been in the room. The load-bearing specific that attaches a claim to you.
-- **Delta-4** — the artifact must beat a resume plus a referral by four points out of ten. Below that, don't build.
 - **transferred model** — a mental model carried from a previous domain. Audit the condition underneath it before you trust it here.
-- **the compass** — a second signal run on a finished thesis. North (whose job the theme serves), South (is the outcome producible), East (does the strongest counter survive), West (does the analogy's condition transfer). Each failed direction routes to the step that owns it.
-- **the transfer test** — name the source, name the condition that made it true there, check the condition holds here; if it fails, the model may be inverted, not merely weaker. Run inward on the user's own imported models, outward on other companies' solutions.
+- **the two checks** — run on a finished thesis before it ships: the counter (does the strongest objection survive?) and producibility (can you build the evidence honestly from outside?). Either can route the thesis back to the step that owns the failure.
+- **the transfer test** — name the source, name the condition that made it true there, check the condition holds here; if it fails, the model may be inverted, not merely weaker. Run on the models the user carries from a previous domain.
 
 MIT.

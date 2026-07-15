@@ -59,7 +59,7 @@ Lookout exists and is off the table for the thesis. It's a receipt I'll cite lat
 The obvious thesis is the benchmark-vs-marketplace adversarial tension. Kill it as too obvious unless it survives Step 2. Push toward the extraction pipeline: they see $200B of spend and can't read the PDFs.
 ```
 
-It will extract the bar, kill hypotheses, make you name a segment, gather receipts, name the constraint, audit your transferred models, score Delta-4, and name the bet. It ends **without** a document. That is correct. Do not ask it for a write-up here.
+It will extract the bar, kill hypotheses, make you name a segment, gather receipts, name the constraint, audit your transferred models, name the bet, then stress-test it with two checks and name the one claim it dies without. It ends **without** a document. That is correct. Do not ask it for a write-up here.
 
 ```
 /clear

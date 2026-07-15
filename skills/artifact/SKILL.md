@@ -11,9 +11,9 @@ Turn the thesis into something that ran.
 
 ## Check the thesis was tested
 
-Before anything else, confirm the thesis arrived with its four compass verdicts — North, South, East, West, each with a written reason. If it did not, the thesis skipped the test phase of `/thesis` and only *feels* strong. Do not build on it. Send it back to `/thesis` Step 6, or run the compass here before proposing anything. Building on an untested thesis is the skip completing itself, and it is the one thing this pipeline exists to stop.
+Before anything else, confirm the thesis arrived with its two check verdicts — the counter (does the strongest objection survive?) and producibility (can the evidence be built honestly from outside?) — and its keystone with a rating, each with a written reason. If those are missing, the thesis skipped the test phase of `/thesis` and only *feels* strong. Do not build on it. Send it back to `/thesis` Step 6, or run the two checks here before proposing anything. Building on an untested thesis is the skip completing itself, and it is the one thing this pipeline exists to stop.
 
-If a South producibility flag arrived, carry it into the producibility gate below — it is already telling you the load-bearing output may not be buildable from outside.
+If a producibility flag arrived, carry it into the producibility gate below — it is already telling you the load-bearing output may not be buildable from outside. And if the keystone arrived rated Assumed, verifying it is the first task here, before any build.
 
 ## Pick the receipt
 
@@ -35,7 +35,7 @@ Propose one, with an hour estimate. Ask for confirm or redirect.
 
 Before any build begins, name the artifact's **load-bearing output** — the one number, result, or artifact the whole thing rests on. A confidence score. A precision figure. A benchmark. A transcript finding.
 
-Then ask: can that output be produced *honestly* from what the user can actually reach? If the thesis arrived with a South flag from the compass, this is where it lands, and it is a hard gate.
+Then ask: can that output be produced *honestly* from what the user can actually reach? If the thesis arrived with a producibility flag from `/thesis`, this is where it lands, and it is a hard gate.
 
 The failure mode is an output that can only be produced by fabrication. If the load-bearing number needs the company's private data and the user substitutes an invented one, the artifact fabricates its own core claim, and a reviewer who knows the domain catches it on sight. That is worse than no artifact.
 
